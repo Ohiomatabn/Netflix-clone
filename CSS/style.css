@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--white);
+}
+
+:root{
+    --red:#ff0000de;
+    --white:white;
+    --gray:rgb(175, 173, 173, 0.2);
+    --black:black;
+}
+
+/*global*/
+body{
+    background-color: var(--black);
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+}
+
+h1{
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+p{
+    font-size: 16px;
+}
+
+input{
+    padding: 15px 30px;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--white);
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+}
+
+/*header*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 13px;
+}
+
+.header h3{
+    font-size: 25px;
+    color: var(--red);
+}
+
+.header p a{
+    text-decoration: none;
+    font-size: 18px;
+    border: 1px solid var(--red);
+    padding: 8px;
+    background-color: var(--red);
+    border-radius: 5px;
+}
+
+.section-1{
+    background-image: url('../Image/NETFLIX\ IMG-1.jpg');
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100%;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn{
+    text-decoration: none;
+    border: 1px solid var(--red);
+    padding: 15px 10px;
+    border-radius: 5px;
+    background-color: var(--red);
+}
+
+.hero h1, p{
+    margin-top: 20px;
+}
+
+div.input{
+    margin-top: 20px;
+}
+
+.section-2, .section-3, .section-4, .section-5{
+    border-bottom: 10px solid var(--gray);
+}
+.section-2 .container, .section-3 .container, .section-5 .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0px;
+}
+
+.enjoy p, .download p, .watch p, .profiles p, .ready p{
+    font-size: 25px;
+}
+
+.section-6{
+    padding-top: 50px;
+}
+
+.watch{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 65%;
+    padding: 220px 0px;
+}
+
+.question h2{
+    font-size: 50px;
+    text-align: center;
+}
+
+summary{
+    font-size: 30px;
+    padding: 40px;
+    background-color: var(--gray);
+    margin-top: 15px;
+}
+
+.ready{
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.ready p{
+    padding-bottom: 30px;
+}
+
+.ready input{
+    padding: 15px 80px;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--white);
+    border-radius: 5px;
+    border: 1px solid var(--gray);
+    margin-right: 5px;
+}
+
+.btnn{
+    text-decoration: none;
+    border: 1px solid var(--red);
+    padding: 15px 50px;
+    border-radius: 5px;
+    background-color: var(--red);
+    text-align: center;
+}
+
+footer{
+    border-top: 10px solid var(--gray);
+}
+
+footer .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0px;
+}
+
+.contact p, .help p, .account p, .media p{
+    font-size: 15px;
+    text-decoration: underline;
+    color: gray;
+}
+
+#lang{
+    padding: 0px 20px;
+    color: var(--white);
+    margin-top: 10px;
+    outline: none;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+@media(max-width:1300px){
+    .section-2 .container, .section-3 .container, .section-5 .container{
+        flex-direction: column;
+    }
+
+    .watch{
+        width: 100%;
+    }
+
+    .ready input, .btnn{
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+@media(max-width:500px){
+    .tv img{
+        width: 300px;
+    }
+
+    .kids img{
+        width: 300px;
+    }
+
+    .question h2{
+        font-size: 25px;
+    }
+
+    summary{
+        font-size: 18px;
+    }
+
+    .ready input, .btnn{
+        display: inline-block;
+        width: 100%;
+    }
+
+    .btnn{
+        margin-top: 10px;
+    }
+
+    footer .container{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .help, .account, .media{
+        padding-top: 30px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    .enjoy p, .download p, .watch p, .profiles p, .ready p{
+        font-size: 20px;
+    }
+
+    input{
+        margin-bottom: 20px;
+    }
+}
